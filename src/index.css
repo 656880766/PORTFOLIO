@@ -217,3 +217,17 @@
       -1.8em -1.8em 0 0em #ffffff;
   }
 }
+
+.image-cercle {
+  width: 400px; /* Taille par défaut du cercle */
+  height: 400px;
+  border-radius: 0; /* Forme un cercle */
+  overflow: hidden; /* Masque l'image si elle est trop grande */
+}
+
+.image-cercle img {
+  width: 100%; /* L'image occupe toute la largeur du cercle */
+  height: 100%; /* L'image occupe toute la hauteur du cercle */
+  object-fit: cover; /* Centre et redimensionne l'image pour qu'elle remplisse le cercle */
+}
+

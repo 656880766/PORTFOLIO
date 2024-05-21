@@ -2,6 +2,7 @@
 // ! Don't remove anything from here if not sure
 
 import {
+  aws,
   mobile,
   backend,
   creator,
@@ -18,10 +19,9 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+  clinkast,
+  cecos,
+  seed,
   threejs,
   project1,
   project2,
@@ -36,18 +36,24 @@ import {
   linkedin,
   twitter,
   github,
+  azure,
+  gcp,
+  ansible,
+  jenkins,
+  kube,
+  spring,
 } from "../assets";
 
 // Navbar Links
 export const NAV_LINKS = [
   {
     id: "about",
-    title: "About",
+    title: "Qui je suis?",
     link: null,
   },
   {
     id: "work",
-    title: "Work",
+    title: "Mes experiences ",
     link: null,
   },
   {
@@ -58,32 +64,70 @@ export const NAV_LINKS = [
   {
     id: "source-code",
     title: "Source Code",
-    link: "http://www.github.com/sanidhyy/3d-portfolio/",
+    link: "http://www.github.com/656880766",
   },
 ] as const;
 
 // Services
 export const SERVICES = [
   {
-    title: "Web Developer",
+    title: "Developpeur Web Java",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Ingenieur DevOps",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Architecte Cloud",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Consultant Data et IA",
     icon: creator,
   },
 ] as const;
 
 // Technologies
 export const TECHNOLOGIES = [
+  {
+    name: "aws",
+    icon: aws,
+  },
+  {
+    name: "azure",
+    icon: azure,
+  },
+
+  {
+    name: "gcp",
+    icon: gcp,
+  },
+
+    {
+    name: "jenkins",
+    icon: jenkins,
+  },
+
+
+  // {
+  //   name: "ansible",
+  //   icon: ansible,
+  // },
+  {
+    name: "docker",
+    icon: docker,
+  },
+
+  {
+    name: "kube",
+    icon: kube,
+  },
+  {
+    name: "spring",
+    icon: spring,
+  },
+
   {
     name: "HTML 5",
     icon: html,
@@ -104,26 +148,7 @@ export const TECHNOLOGIES = [
     name: "React JS",
     icon: reactjs,
   },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
+
   {
     name: "git",
     icon: git,
@@ -132,64 +157,55 @@ export const TECHNOLOGIES = [
     name: "figma",
     icon: figma,
   },
-  {
-    name: "docker",
-    icon: docker,
-  },
+ 
 ] as const;
 
 // Experiences
 export const EXPERIENCES = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Stage- Développeur springboot - microservices",
+    company_name: "ClinKast",
+    icon: clinkast,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Fevrier 2023 - Août 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Contexte: Développement et mise en place d'un outils de prédiction du comportement des consommateurs de produits exotique",
+      "Méthode de travail Agile : SCRUM ( Daily meeting, Sprint Planning, Démo, Retro, La suite de Fibonacci)",
+      "Conception et développement des microservice",
+      "Implémentation par TDD ( Test-driven Development) Springboot( Junit, Mockito, Jococo)",
+      "Analyse des bugs et incidents remonté par les L2 et les BA.",
+      "DevOps: Mise en place des pipelines CI/CD en utilisant Jenkins , Sonarqube, Nexus, Docker, AWS ECS(Elastic Container Service)."
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Stage -  Développeur Springboot",
+    company_name: "Cecos Informatique",
+    icon: cecos,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Mai 2022 - Août 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Contexte: Développement d'une application de gestion de dettes pour une microfinance",
+      "Conception et développement d'interfaces utilisateur intuitives avec Figma",
+      "Modélisation de l'architecture fonctionnelle avec UML (StarUML)",
+      "Implémentation du backend avec Spring Boot et intégration des différentes pages web avec thymeleaf",
+      "Tests Unitaires",
+      "déploiement sur les environnements de recettes et de production"
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Stage - Développeur backend - API",
+    company_name: "Seed",
+    icon: seed,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Mai 2021 - Juin 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Contexte: Développement et exposition d'une api de gestion de réservation des stands",
+      "Modélisation de l'architecture fonctionnelle avec UML (StarUML)",
+      "Conception et Implémentation de la base de données (MySql)",
+      "Implémentation de l'api avec Laravel",
+      "Test avec Postman",
+      "Intégration du frontend coté Angular",
+      "Déploiement sur le cloud avec AWS beanstalk"
     ],
   },
 ] as const;
@@ -197,114 +213,106 @@ export const EXPERIENCES = [
 // Testimonials
 export const TESTIMONIALS = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
+    testimonial: user1,
+    name: "Lien du Badge ",
+    designation: "https://www.credly.com/badges/7b54f03f-e190-4bd9-87c5-f8b10b4c1592/public_url/",
     company: "Acme Co",
     image: user1,
   },
+
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: user2,
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: user3,
-  },
+    testimonial: user2,
+    name: "Lien du Badge ",
+    designation: "https://www.credly.com/badges/fc9c73f8-3d9a-4352-b04d-a4ed56bcdab7/public_url",
+    company: "Acme Co",
+    image: user1,
+  }
+ 
 ] as const;
 
 // Projects
 export const PROJECTS = [
   {
-    name: "Disney+ Clone",
+    name: "Bank Microservices",
     description:
-      "Disney+ is one of the biggest streaming platforms used by millions of people world-wide and allows us to stream high quality content in 4k and various other formats",
+      "Application pour la gestion des differents departements d'une banque pour une meilleurs gestion et organisation des opérations bancaires",
     tags: [
       {
-        name: "react",
+        name: "Spring Boot",
         color: "blue-text-gradient",
       },
       {
-        name: "firebase",
+        name: "Spring Cloud",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "GCP",
         color: "pink-text-gradient",
       },
     ],
     image: project1,
-    source_code_link: "https://github.com/sanidhyy/disney-clone",
-    live_site_link: "https://clonedisneyplus.web.app/",
+    source_code_link: "https://github.com/656880766/eazybank-config.git",
+    //live_site_link: "https://clonedisneyplus.web.app/",
   },
   {
-    name: "Golds Gym",
+    name: "AWS CIDI",
     description:
-      "Web application that enables users to search for fitness exercises, effective personalized positions, and recommends new exercises based on their personal preferences.",
+      "Mise en place d'une chaine complete d'intergration et de deploiement continu avec les services proposé par le cloud provider d'Amazon",
     tags: [
       {
-        name: "react",
+        name: "AWS",
         color: "blue-text-gradient",
       },
       {
-        name: "rapidapi",
+        name: "JENKINS",
         color: "green-text-gradient",
       },
       {
-        name: "tailwindcss",
+        name: "Kubernetes",
         color: "pink-text-gradient",
       },
     ],
     image: project2,
-    source_code_link: "https://github.com/sanidhyy/fitness-app",
-    live_site_link: "https://fitness-gym-react.netlify.app/",
+    source_code_link: "git@github.com:656880766/AWS-CIDI.git",
+    //live_site_link: "https://fitness-gym-react.netlify.app/",
   },
   {
-    name: "Shoppy",
+    name: "Marvel Quizz",
     description:
-      "The most personalised admin dashboard web application that allows enables users to choose customized themes and dark mode with different pages and variety of charts.",
+      "Application personnelle de quizz sur le monde des marvels pour s'amuser entre geek et de partager des connaissances dans la communauté",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "syncfusion",
+        name: "Redux",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Firebase",
         color: "pink-text-gradient",
       },
     ],
     image: project3,
-    source_code_link: "https://github.com/sanidhyy/admin-dashboard",
-    live_site_link: "https://shoppy-dashboard-react.netlify.app/",
+    source_code_link: "https://marvel-quiz-hosted-3bf07.firebaseapp.com",
+    live_site_link: "https://marvel-quiz-hosted-3bf07.firebaseapp.com",
   },
   {
-    name: "TikTok Clone",
+    name: "Your Booking",
     description:
-      "A Next JS Web Application that enables users to upload videos of any length and size, create accounts and connect with other people just like any other social media.",
+      "Application de gestion de reservation des emplacements d'une localité pour palier pour rendre visible ceux qui ne sont pas sur les sites connus",
     tags: [
       {
-        name: "nextjs",
+        name: "Angular",
         color: "blue-text-gradient",
       },
       {
-        name: "nodejs",
+        name: "Laravel",
         color: "green-text-gradient",
       },
       {
-        name: "tailwindcss",
+        name: "POSTMAN",
         color: "pink-text-gradient",
       },
     ],
@@ -313,70 +321,70 @@ export const PROJECTS = [
     live_site_link: "https://tiktok-clone-react.vercel.app/",
   },
   {
-    name: "Cryptoverse",
+    name: "Gestion des dettes",
     description:
-      "Best Cryptocurrency web application that allows users to view price, market cap and daily change in realtime for almost every cryptocurrency in the world.",
+      "L'application a permis à une filiale du ministere des finances de migrer son application de bureau en une application Web",
     tags: [
       {
-        name: "react",
+        name: "Spring Boot",
         color: "blue-text-gradient",
       },
       {
-        name: "rapidapi",
+        name: "Thymeleaf",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "AWS",
         color: "pink-text-gradient",
       },
     ],
     image: project5,
-    source_code_link: "https://github.com/sanidhyy/crypto-app",
-    live_site_link: "https://reactjscryptoapp.netlify.app/",
+    source_code_link: "https://github.com/656880766/gestiondettes",
+   // live_site_link: "https://reactjscryptoapp.netlify.app/",
   },
   {
-    name: "Travel Advisor",
+    name: "Architectures Cloud",
     description:
-      "Web application that enables you to view your nearby restaurants, hotels and attractions which can be sorted by ratings, price and much more.",
+      "Liste de tout mes projets sur l'architecture cloud en passant par du cloud privée jusqu'à des cloud public comme Amazon Web Services et AZURE",
     tags: [
       {
-        name: "react",
+        name: "AWS",
         color: "blue-text-gradient",
       },
       {
-        name: "rapidapi",
+        name: "AZURE",
         color: "green-text-gradient",
       },
       {
-        name: "material-ui",
+        name: "VMWARE",
         color: "pink-text-gradient",
       },
     ],
     image: project6,
-    source_code_link: "https://github.com/sanidhyy/travel-advisor",
-    live_site_link: "https://travel-advisor-reactjs.netlify.app/",
+    source_code_link: "https://drive.google.com/drive/folders/1RBGRgJL_Bo11FJlvgfCemgJJgdj-KnZJ?usp=sharing",
+    //live_site_link: "https://travel-advisor-reactjs.netlify.app/",
   },
 ] as const;
 
 export const SOCIALS = [
-  {
-    name: "YouTube",
-    icon: youtube,
-    link: "https://www.youtube.com/@OPGAMER.",
-  },
+  // {
+  //   name: "YouTube",
+  //   icon: youtube,
+  //   link: "https://www.youtube.com/@OPGAMER.",
+  // },
   {
     name: "Linkedin",
     icon: linkedin,
-    link: "https://www.linkedin.com/in/sanidhyy",
+    link: "www.linkedin.com/in/yves-tchale",
   },
   {
     name: "Twitter",
     icon: twitter,
-    link: "https://twitter.com/TechnicalShubam",
+    link: "https://twitter.com/TchaleYves",
   },
   {
     name: "GitHub",
     icon: github,
-    link: "https://github.com/sanidhyy",
+    link: "https://github.com/656880766",
   },
 ] as const;

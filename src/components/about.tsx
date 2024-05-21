@@ -46,7 +46,7 @@ export const About = () => {
         {/* Title */}
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>Introduction</p>
-          <h2 className={styles.sectionHeadText}>Overview.</h2>
+          <h2 className={styles.sectionHeadText}>Apercu.</h2>
         </motion.div>
 
         {/* Body */}
@@ -54,11 +54,12 @@ export const About = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="empty-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          I'm a skilled website developer with experience in TypeScript and
-          Javascript, and expertise in frameworks like React, Node.js, and
-          Three.js. I'm a quick learner and collaborate closely with clients to
-          create efficient, scalable, and user-friendly solutions that solve
-          real-world problems. Let's work together to bring your ideas to life!
+          Passionné de cloud et DevOps, actuellement étudiant à Metaverse College. Tout au long de mon parcours 
+          j'ai pu acquerir des connaissance Developpement web (JAVA) 
+          en infrastructures,plateformes et outils DevOps (Jenkins, Ansible, Docker) 
+          . Fort d'un esprit d'équipe, 
+           d'une rigueur et d'une forte adaptabilité, je  suis convaincu de pouvoir
+            contribuer activement à des projets et poursuivre mon apprentissage dans ce domaine en constante évolution.
         </motion.p>
 
         {/* Service Card */}

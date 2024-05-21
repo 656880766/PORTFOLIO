@@ -11,6 +11,15 @@ import mobile from "./mobile.png";
 import preview from "./preview.png";
 import web from "./web.png";
 
+import aws from "./tech/aws.png";
+import gcp from "./tech/gcp.jpg";
+import azure from "./tech/Azure.png";
+import ansible from "./tech/Ansible.png";
+import jenkins from "./tech/jenkins.png";
+import kube from "./tech/kubernetes.png";
+import spring from "./tech/spring.png";
+
+
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -25,20 +34,20 @@ import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.svg";
 import typescript from "./tech/typescript.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
 
-import project1 from "./projects/project1.png";
-import project2 from "./projects/project2.png";
+import clinkast from "./company/clinkast.jpeg";
+import cecos from "./company/cecos.jpeg";
+import seed from "./company/seed.png";
+
+import project1 from "./projects/project1.jpg";
+import project2 from "./projects/project2.jpg";
 import project3 from "./projects/project3.png";
-import project4 from "./projects/project4.png";
+import project4 from "./projects/project4.jpeg";
 import project5 from "./projects/project5.png";
-import project6 from "./projects/project6.png";
+import project6 from "./projects/project6.jpg";
 
-import user1 from "./testimonials/user1.jpg";
-import user2 from "./testimonials/user2.jpg";
+import user1 from "./testimonials/user1.png";
+import user2 from "./testimonials/user2.png";
 import user3 from "./testimonials/user3.jpg";
 
 import github from "./socials/github.svg";
@@ -47,6 +56,13 @@ import twitter from "./socials/twitter.svg";
 import youtube from "./socials/youtube.svg";
 
 export {
+  aws,
+  gcp,
+  azure,
+  ansible,
+  jenkins,
+  kube,
+  spring,
   backend,
   bulb,
   close,
@@ -69,10 +85,9 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+  clinkast,
+  seed,
+  cecos,
   project1,
   project2,
   project3,

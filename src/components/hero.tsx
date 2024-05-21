@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
-
-import { ComputersCanvas } from "./canvas";
+import { TECHNOLOGIES } from "../constants";
+import { BallCanvas, ComputersCanvas } from "./canvas";
 import { styles } from "../styles";
 import { cn } from "../utils/lib";
+import PhotoProfile from "./photo";
 
 // Hero
 export const Hero = () => {
@@ -23,17 +24,23 @@ export const Hero = () => {
         {/* About Me */}
         <div>
           <h1 className={cn(styles.heroHeadText, "text-white")}>
-            Hi, I'm <span className="text-[#915eff]">Shubham</span>
+            Salut, Je suis <span className="text-[#915eff]">Yves Michel </span>
           </h1>
-          <p className={cn(styles.heroSubText, "mt-2 text-white-100")}>
-            I develop 3D visuals, user <br className="sm:block hidden" />
-            interfaces and web applications
+          <p className={cn(styles.heroSubText, "mt-2 text-white-100 text-center")}>
+          <span className="text-[#915eff]">Architecthe Cloud Junior</span>,<br className="sm:block hidden" />
+            <span className="text-[#915eff]">Ingenieur DevOps Junior </span>,<br className="sm:block hidden" />
+            <span className="text-[#915eff]">Developeur fullstack Java </span><br className="sm:block hidden" />
           </p>
         </div>
+        <div className="flex flex-row flex-wrap justify-center gap-10">
+      <PhotoProfile />
+       
+      </div>
       </div>
 
       {/* Computer Model */}
-      <ComputersCanvas />
+      {/* <ComputersCanvas /> */}
+
 
       {/* Scroll to about section */}
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
