@@ -25,7 +25,7 @@
     "type": "git",
     "url": "https://github.com/656880766/PORTFOLIO"
   },
-  "homepage": "https://github.com/656880766/PORTFOLIO",
+  "homepage": "https://656880766.github.io/PORTFOLIO",
   "bugs": {
     "url": "https://github.com/656880766/PORTFOLIO/issues",
     "email": "yvestchale2@gmail.com"
@@ -46,7 +46,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "check-types": "tsc --noEmit",
-    "deploy": "gh-pages -d build"
+    "predeploy": "npm run build",
+     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
