@@ -3,9 +3,9 @@
   "version": "1.1.4",
   "private": true,
   "author": {
-    "name": "Sanidhya Kumar Verma",
-    "email": "sanidhya.verma12345@gmail.com",
-    "url": "https://github.com/sanidhyy"
+    "name": "Yves Michel FOYET TCHALE",
+    "email": "yvestchale2@gmail.com",
+    "url": "https://github.com/656880766"
   },
   "description": "Modern 3D Portfolio using React, Three.js and Typescript",
   "keywords": [
@@ -23,21 +23,21 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sanidhyy/3d-portfolio.git"
+    "url": "https://github.com/656880766/PORTFOLIO"
   },
-  "homepage": "https://github.com/sanidhyy/3d-portfolio#readme",
+  "homepage": "https://github.com/656880766/PORTFOLIO",
   "bugs": {
-    "url": "https://github.com/sanidhyy/3d-portfolio/issues",
-    "email": "sanidhya.verma12345@gmail.com"
+    "url": "https://github.com/656880766/PORTFOLIO/issues",
+    "email": "yvestchale2@gmail.com"
   },
   "funding": [
     {
       "type": "patreon",
-      "url": "https://www.patreon.com/sanidhy"
+      "url": "https://github.com/656880766/PORTFOLIO"
     },
     {
       "type": "Buy me a coffee",
-      "url": "https://www.buymeacoffee.com/sanidhy"
+      "url": "https://github.com/656880766/PORTFOLIO"
     }
   ],
   "type": "module",
@@ -45,12 +45,13 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "check-types": "tsc --noEmit"
+    "check-types": "tsc --noEmit",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
-    "@react-three/fiber": "^8.16.6",
     "@react-three/drei": "^9.105.6",
+    "@react-three/fiber": "^8.16.6",
     "clsx": "^2.1.1",
     "framer-motion": "^11.1.9",
     "maath": "^0.10.7",
@@ -70,6 +71,7 @@
     "@types/tailwindcss": "^3.1.0",
     "@vitejs/plugin-react": "^4.0.3",
     "autoprefixer": "^10.4.19",
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.3",
     "typescript": "^5.4.5",
