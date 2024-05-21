@@ -1,6 +1,7 @@
 // Export new images here
 // Don't remove anything from here if not sure
 
+import yveslinkedin from "./yves_linkedin.jpg"
 import backend from "./backend.png";
 import bulb from "./bulb.svg";
 import close from "./close.svg";
@@ -101,4 +102,5 @@ export {
   youtube,
   linkedin,
   twitter,
+  yveslinkedin
 };

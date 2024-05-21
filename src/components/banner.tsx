@@ -46,12 +46,12 @@ const Banner = ({ hide, setHide }: BannerProps) => {
               width={12}
               className="text-gray-500"
             />
-            <span className="sr-only">Light bulb</span>
+            <span className="sr-only">Hello</span>
           </span>
           <span>
-            Did you like this portfolio. Check out my{" "}
+            Bienvenue sur mon portfolio.Lien vers mes projets{" "}
             <Link
-              to="https://www.sanidhy.me"
+              to="https://github.com/656880766/"
               target="_blank"
               rel="noreferrer noopener"
               className="inline font-medium text-blue-600 underline underline-offset-2 decoration-600 hover:no-underline"

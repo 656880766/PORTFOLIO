@@ -1,9 +1,10 @@
 import ImageCercle from './imageCercle';
+import { yveslinkedin } from '../assets';
 
 const PhotoProfile = () => {
   return (
     <div className="App">
-      <ImageCercle src="src\assets\yves_linkedin.jpg" alt="Image de profil" />
+      <ImageCercle src={yveslinkedin} alt="Image de profil" />
     </div>
   );
 };
